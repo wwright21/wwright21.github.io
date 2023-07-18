@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en" class="h-100" data-bs-theme="auto">
 
 <head>
   <script src="../assets/js/color-modes.js"></script>
@@ -9,14 +9,9 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.112.5">
-  <title>Projects</title>
+  <title>Portfolio</title>
 
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
-
-
-
-
-
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -92,103 +87,95 @@
     .bd-mode-toggle {
       z-index: 1500;
     }
+
+    .custom-btn {
+      color: #fff;
+      background-color: #000;
+      border-color: #000;
+    }
+
+    .custom-btn:hover {
+      color: #000;
+      background-color: #fff;
+      border-color: #000;
+    }
+
+    .custom-card {
+      width: 200px;
+    }
   </style>
 
 
+  <!-- Custom styles for this template -->
+  <link href="../cover.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex h-100 text-center text-bg-dark">
 
 
 
-  <main data-bs-theme="dark">
-
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Portfolio Projects</h1>
-          <p class="lead text-body-secondary">Click on a link below to access a GitHub repository containing code for
-            several projects in the MiT Full Stack Development Course.</p>
-        </div>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Will Wright's Portfolio</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0" href="../index.html">Home</a>
+          <a class="nav-link fw-bold py-1 px-0" href="../about/about.html">About</a>
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="projects.html">Projects</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <div class="album py-5 bg-body-tertiary">
+    <main>
       <div class="container">
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Project
-                  1</text>
-              </svg>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card custom-card">
+              <img src="images/eyes.png" class="card-img-top" alt="Card Image">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
+                <h5 class="card-title">Eyes Exercise</h5>
+                <p class="card-text">Short description of the project.</p>
+                <a href="https://github.com/wwright21/mit_eye_movement" target="_blank" class="btn btn-primary custom-btn">GitHub Repo</a>
+                <hr>
+                <a href="https://wwright21.github.io/mit_eye_movement/" target="_blank" class="btn btn-primary custom-btn">Deployed Site</a>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Project
-                  2</text>
-              </svg>
+          <!-- Repeat the above card structure for the remaining two cards -->
+          <div class="col-lg-4 mb-4">
+            <div class="card custom-card">
+              <img src="images/pacman.png" class="card-img-top" alt="Card Image">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
+                <h5 class="card-title">PacMan Factory</h5>
+                <p class="card-text">Short description of the project.</p>
+                <a href="https://github.com/wwright21/mit_pacman_factory" target="_blank" class="btn btn-primary custom-btn">GitHub Repo</a>
+                <hr>
+                <a href="https://wwright21.github.io/mit_pacman_factory/" target="_blank" class="btn btn-primary custom-btn">Deployed Site</a>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Project
-                  3</text>
-              </svg>
+          <div class="col-lg-4 mb-4">
+            <div class="card custom-card">
+              <img src="images/bus.png" class="card-img-top" alt="Card Image">
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Visit GitHub Repo</button>
-                  </div>
-                </div>
+                <h5 class="card-title">Bus Tracker</h5>
+                <p class="card-text">Short description of the project.</p>
+                <a href="https://github.com/wwright21/mit_bus_tracker" target="_blank" class="btn btn-primary custom-btn">GitHub Repo</a>
+                <hr>
+                <a href="https://wwright21.github.io/mit_bus_tracker/" target="_blank" class="btn btn-primary custom-btn">Deployed Site</a>
               </div>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
-    </div>
 
-  </main>
+    </main>
 
-
+    <footer class="mt-auto text-white-50">
+      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
+          href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
+  </div>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
