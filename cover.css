@@ -23,6 +23,31 @@ body {
   position: relative;
 }
 
+.custom-font-extra-light {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200; 
+}
+
+.custom-font-light {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300; 
+}
+
+.custom-font-medium {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500; 
+}
+
+.custom-font-bold {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700; 
+}
+
+.custom-font-extra-bold {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800; 
+}
+
 video {
   position: fixed;
   top: 0;
