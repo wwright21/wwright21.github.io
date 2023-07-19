@@ -40,13 +40,20 @@
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
       }
+    }
 
-      @media (max-width: 576px) {
-        h1 {
-          color: red;
-        }
+    h1 {
+      font-size: 3rem;
+      padding-bottom: 2px;
+    }
+
+    @media (max-width: 425px) {
+      h1 {
+        font-size: 1rem;
+        padding-bottom: 10px;
       }
     }
+
 
     .b-example-divider {
       width: 100%;
@@ -119,34 +126,21 @@
       </div>
     </header>
 
-    <!-- HTML structure for the collapsible sidebar that only shows up on mobile -->
-    <div class="sidebar">
-      <button class="btn btn-dark d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
-        aria-expanded="false" aria-controls="sidebarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse" id="sidebarCollapse">
-        <nav class="nav flex-column">
-          <a class="custom-font-extra-light nav-link py-1 px-0 active" href="index.html">[home]</a>
-          <a class="custom-font-extra-light nav-link py-1 px-0" href="projects/projects.html">[projects]</a>
-          <a class="custom-font-extra-light nav-link py-1 px-0" href="about/about.html">[about]</a>
-        </nav>
-      </div>
-    </div>
+  
 
     <main class="px-3">
       <h1 class="custom-font-extra-bold"
-        style="font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding-bottom: 2px;">
+        style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
         &lt;h1&gt; Hello, World! &lt;/h1&gt;
       </h1>
       <h1 class="custom-font-extra-bold"
-        style="font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding-top: 5px;">
+        style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
         <em> Meet Will Wright. </em>
       </h1>
 
       <br><br><br>
       <p class="custom-font-extra-light lead" style="text-shadow: 4px 4px 10px #000;">
-        Welcome to the portfolio site for Will Wright. I do a bit of a geospatial storytelling, web development, data
+        Welcome to the portfolio site for Will Wright. I do a bit of geospatial storytelling, web development, data
         science, and
         software engineering. Explore my recent projects or drop me a line!
       </p>
