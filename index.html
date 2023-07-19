@@ -2,7 +2,8 @@
 <html lang="en" class="h-100" data-bs-theme="auto">
 
 <head>
-  <script src="assets/js/color-modes.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+
   <script>
     var video = document.querySelector('video');
 
@@ -24,6 +25,8 @@
 
   <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -38,7 +41,7 @@
         font-size: 3.5rem;
       }
 
-      @media (max-width: 576px){
+      @media (max-width: 576px) {
         h1 {
           color: red;
         }
@@ -101,14 +104,14 @@
 
 <body class="d-flex h-100 text-center text-bg-dark">
 
-
+  <!-- header that appears on wide browser screens -->
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
       <div>
         <h4 class="custom-font-extra-light float-md-start mb-0" style="padding-top: 8px;">
           [web_development, data_science]
         </h4>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
+        <nav class="nav nav-masthead justify-content-center float-md-end d-none d-md-flex">
           <a class="custom-font-extra-light nav-link py-1 px-0 active" aria-current="page" href="index.html">[home]</a>
           <a class="custom-font-extra-light nav-link py-1 px-0" href="projects/projects.html">[projects]</a>
           <a class="custom-font-extra-light nav-link py-1 px-0" href="about/about.html">[about]</a>
@@ -116,17 +119,35 @@
       </div>
     </header>
 
+    <!-- HTML structure for the collapsible sidebar that only shows up on mobile -->
+    <div class="sidebar">
+      <button class="btn btn-dark d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse"
+        aria-expanded="false" aria-controls="sidebarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse" id="sidebarCollapse">
+        <nav class="nav flex-column">
+          <a class="custom-font-extra-light nav-link py-1 px-0 active" href="index.html">[home]</a>
+          <a class="custom-font-extra-light nav-link py-1 px-0" href="projects/projects.html">[projects]</a>
+          <a class="custom-font-extra-light nav-link py-1 px-0" href="about/about.html">[about]</a>
+        </nav>
+      </div>
+    </div>
+
     <main class="px-3">
-      <h1 class="custom-font-extra-bold" style="font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding-bottom: 2px;">
+      <h1 class="custom-font-extra-bold"
+        style="font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding-bottom: 2px;">
         &lt;h1&gt; Hello, World! &lt;/h1&gt;
       </h1>
-      <h1 class="custom-font-extra-bold" style="font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding-top: 5px;">
+      <h1 class="custom-font-extra-bold"
+        style="font-size: 3rem; color: white; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); padding-top: 5px;">
         <em> Meet Will Wright. </em>
       </h1>
 
       <br><br><br>
       <p class="custom-font-extra-light lead" style="text-shadow: 4px 4px 10px #000;">
-        Welcome to the portfolio site for Will Wright. I do a bit of a geospatial storytelling, web development, data science, and
+        Welcome to the portfolio site for Will Wright. I do a bit of a geospatial storytelling, web development, data
+        science, and
         software engineering. Explore my recent projects or drop me a line!
       </p>
       <br><br>
@@ -150,6 +171,9 @@
   <video width="100%" height="100%" autoplay loop muted playsinline>
     <source src="about/background.mp4" type="video/mp4">
   </video>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
