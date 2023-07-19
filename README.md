@@ -1,3 +1,3 @@
 # Will Wright's Portfolio
-<hr><br>
+<br>
 Portfolio site for web development, data science, and geospatial analysis projects created, edited, and collaborated on by Will Wright.
