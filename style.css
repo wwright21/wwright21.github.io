@@ -1,51 +1,35 @@
 /*
- * Globals
- */
-
-
-/* Custom default button */
-.btn-light,
-.btn-light:hover,
-.btn-light:focus {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-}
-
-
-/*
  * Base structure
  */
 
 body {
-  /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); */
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
   position: relative;
 }
 
 .custom-font-extra-light {
   font-family: 'Manrope', sans-serif;
-  font-weight: 200; 
+  font-weight: 200;
 }
 
 .custom-font-light {
   font-family: 'Manrope', sans-serif;
-  font-weight: 300; 
+  font-weight: 300;
 }
 
 .custom-font-medium {
   font-family: 'Manrope', sans-serif;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .custom-font-bold {
   font-family: 'Manrope', sans-serif;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 .custom-font-extra-bold {
   font-family: 'Manrope', sans-serif;
-  font-weight: 800; 
+  font-weight: 800;
 }
 
 video {
@@ -68,6 +52,32 @@ video {
   z-index: 1;
 
 }
+
+/* this is the container for the introductory "Hello World" text */
+.container {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 33%; /* higher values lower the text on the webpage */
+}
+
+#intro-paragraph {
+  opacity: 0;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /*
  * Header

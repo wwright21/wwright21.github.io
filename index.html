@@ -4,6 +4,7 @@
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
 
+  <!-- JavaScript that will play the background globe video on a loop when the site loads -->
   <script>
     var video = document.querySelector('video');
 
@@ -14,12 +15,15 @@
 
   </script>
 
+  <!-- link to JavaScript file that will animate in the intro paragraph after the greeting is done typing -->
+  <script src="script.js"></script>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.112.5">
-  <title>Portfolio</title>
+  <title>Wright Portfolio</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
 
@@ -42,7 +46,7 @@
       }
     }
 
-    h1 {
+    .myH1 {
       font-size: 3rem;
       padding-bottom: 2px;
     }
@@ -101,7 +105,7 @@
 
 
   <!-- Custom styles for this template -->
-  <link href="cover.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,8 +115,11 @@
 
 <body class="d-flex h-100 text-center text-bg-dark">
 
-  <!-- header that appears on wide browser screens -->
+
+
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+      <!-- header that appears on wide browser screens -->
     <header class="mb-auto">
       <div>
         <h4 class="custom-font-extra-light float-md-start mb-0" style="padding-top: 8px;">
@@ -129,19 +136,21 @@
 
 
     <main class="px-3">
-      <h1 class="custom-font-extra-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
-        &lt;h1&gt; Hello, World! &lt;/h1&gt;
-      </h1>
+
+      <div class="container">
+        <h1 class="custom-font-bold"">
+          <span class="auto-type"></span>
+        </h1>
+      </div>
 
       <br><br><br>
-      <p class="custom-font-extra-light lead" style="text-shadow: 4px 4px 10px #000;">
-        Hi, I'm Will Wright. My work involves telling stories in the overlap of geospatial data science and web development. Explore my recent projects or drop me a line!
-      </p>
+      <p id="intro-paragraph" class="custom-font-extra-light lead" style="text-shadow: 4px 4px 10px #000;">
+        <em>It's nice to meet you. I'm Will Wright and I work to blend geospatial data science, functional and beautiful web design, and urban planning policy analysis, all in a day's work. <br><br> Explore my recent projects or drop me a line!</em>
+     
       <br><br>
-      <!-- <p class="lead">
-        <a href="about/about.html" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-      </p> -->
-      <a href="about/about.html" class="custom-button">Learn more</a>
+      
+      <a href="about/about.html" class="custom-button" style="text-shadow: 0px 0px 0px #000;">Learn more</a> 
+    </p>
     </main>
 
     <footer class="custom-font-extra-light mt-auto text-white-50">
@@ -161,6 +170,17 @@
 
   <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- typing animation script -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: ["&lt;h1&gt; Hello, World! &lt;/h1&gt;"],
+      typeSpeed: 60,
+      loop: false
+    })
+  </script>
 
 </body>
 
