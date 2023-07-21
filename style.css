@@ -47,7 +47,7 @@ video {
 }
 
 .cover-container {
-  max-width: 55%;
+  max-width: 60%;
   position: relative;
   z-index: 1;
 
@@ -58,7 +58,8 @@ video {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #fff;
   position: absolute;
-  top: 33%; /* higher values lower the text on the webpage */
+  top: 33%;
+  /* higher values lower the text on the webpage */
 }
 
 #intro-paragraph {
@@ -76,6 +77,38 @@ video {
   100% {
     opacity: 1;
   }
+}
+
+#about-paragraph a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#about-paragraph a:hover {
+  color: lightsalmon;
+  text-decoration: underline;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 34px;
+}
+
+.icon a {
+  color: lightsalmon
+}
+
+.icon a:hover {
+  display: inline;
+  color: #fff;
 }
 
 

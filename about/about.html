@@ -93,6 +93,9 @@
   <!-- Custom styles for this template -->
   <link href="../style.css" rel="stylesheet">
 
+  <!-- Font awesome icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,8 +106,9 @@
 
 
 
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width: 70%;">
 
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <!-- header -->
     <header class="mb-auto">
       <div>
         <h4 class="custom-font-extra-light float-md-start mb-0" style="padding-top: 8px;">
@@ -119,12 +123,46 @@
     </header>
 
     <main class="px-3">
-      <h1>Cover your page.</h1>
-      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
-        text, and add your own fullscreen background photo to make it your own.</p>
-      <p class="lead">
-        <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
-      </p>
+
+      <!-- container that will have YouTube video and bio -->
+      <div class="about-container">
+        <div class="row">
+          <!-- Embedded YouTube Video -->
+          <div class="col-md-7"><br><br>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/_KvcTC91VFE" frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-md-5">
+            <p id="about-paragraph" class="custom-font-medium" style="font-size: 1.1rem; text-align: center;">
+              <!-- The "about me" paragraph -->
+              <em>Hello!</em><br><br>My name is Will Wright, and I currently work as a senior data analyst for the <a href="https://atlantaregional.org/" target="_blank"> Atlanta Regional Commission</a>. I regularly contribute to our <a href="https://33n.atlantaregional.com/" target="_blank"> blog</a> on topics pertaining to housing, demographics, and migration. I build models, data visuzliations, and web applications on these subjects and more. I aim to improve my approach in all facets of my work, whether through more succint programming, compelling visualizations, or data storytelling. A good day's work is one in which I make pertinent data intelligible to communities and individuals tasked with the flourishing of the city and all those inside. <br><br> Contact me below or download my resume - or do both!
+            </p>
+
+            <div class="icon-container">
+              <!-- Icons and explanatory text will go here -->
+              <span class="icon">
+                <a href="mailto:williamcwrightjr@gmail.com" title="Send me an email!">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </span>
+              <span class="icon">
+                <a href="https://www.linkedin.com/in/willwrightjr/" target="_blank" title="Connect with me on LinkedIn!">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </span>
+              <span class="icon">
+                <a href="/about/resume.pdf" download title="Download my resume!">
+                  <i class="fas fa-file-download"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer class="custom-font-extra-light mt-auto text-white-50">
