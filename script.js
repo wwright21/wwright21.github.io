@@ -8,5 +8,5 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         introParagraph.style.opacity = 1;
         introParagraph.style.display = 'inline'; // Or 'inline', 'inline-block', etc. depending on your layout
-    }, 2700);
+    }, 3500);
 });
